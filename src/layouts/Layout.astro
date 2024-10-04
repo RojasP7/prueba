@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		
+	</head>
+	<body class="flex justify-center h-[100vh] flex-col">
+		<header class="flex justify-between items-center py-3 w-[1120px]">
+			<img class="rounded-full w-12 h-12" src="https://http2.mlstatic.com/frontend-assets/homes-palpatine/dynamic-access-desktop/registration-da.svg" alt="">
+			<nav class="flex flex-row gap-x-10 opacity-80">
+				<a href="/home">Home</a>
+				<a href="/abaout">Abaout</a>
+				<a href="/projets">Projects</a>
+				<a href="/contact">Contact</a>
+			</nav>		
+		</header>
+		<main>
+			<section class="w-full lg:w-[740px] mx-auto py-44">
+				<h1 class=" text-5xl font-bold flex justify-center flex-row">Hola soy Fabian</h1>
+				<h2>20 años de experiencia en desarrollo web y estudiante de UFPSO.
+					Colombia, Ocaña, me especialiso en valer verga.
+				</h2>
+			</section>
+		</main>
+		<!-- <slot /> -->
+	</body>
+</html>
+
